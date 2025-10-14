@@ -76,8 +76,8 @@ a{
 }
 .Boton{
     position:absolute;
-    top: 580px;
-    left: 600px;
+    top: 560px;
+    left: 570px;
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -92,8 +92,8 @@ a{
   }
 .Botono {
   position: absolute;
-  top: 600px;
-  left: 800px;
+  top: 580px;
+  left: 770px;
   padding: 5px 10px;
   font-size: 18px;
   font-weight: bold;
@@ -110,3 +110,4 @@ a{
   background-color: red;
 
 }
+
