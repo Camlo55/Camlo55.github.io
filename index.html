@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Página de Regalo</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>
+        Felices 5 meses 💜❤️
+    </h1>
+    <img class="fondo" src="https://images.pexels.com/photos/169211/pexels-photo-169211.jpeg">
+
+    <div class="contenedor">
+        <img class="gata" src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/678_f2.png" alt="gata">
+        <img class="pingu" src="https://i.redd.it/yld7q4m1mhd31.png" alt="">
+    </div>
+    <h2>
+        Me seguiras amando por el resto de nuestras vidas?
+    </h2>
+    <button class="Boton"><a href="https://youtu.be/3cKtSlsYVEU?t=11">Si</a></button>
+    <button class="Botono">No</button>
+
+    <script>
+  const boton = document.querySelector(".Botono");
+
+  function moverBoton() {
+    // Calcula el ancho y alto máximos para que el botón no salga de la ventana
+    const maxX = window.innerWidth - boton.offsetWidth - 20; // margen de 20px
+    const maxY = window.innerHeight - boton.offsetHeight - 20;
+
+    // Posiciones aleatorias dentro de los límites
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    // Aplica la nueva posición con suavidad
+    boton.style.left = randomX + "px";
+    boton.style.top = randomY + "px";
+  }
+
+  // Mueve el botón al hacer click
+  boton.addEventListener("click", moverBoton);
+  boton.addEventListener("mouseenter", moverBoton);
+
+  // Opcional: ajusta la posición si se redimensiona la ventana
+  window.addEventListener("resize", () => {
+    const left = parseInt(boton.style.left);
+    const top = parseInt(boton.style.top);
+    const maxX = window.innerWidth - boton.offsetWidth - 20;
+    const maxY = window.innerHeight - boton.offsetHeight - 20;
+
+    // Mantener dentro de la pantalla
+    boton.style.left = Math.min(left, maxX) + "px";
+    boton.style.top = Math.min(top, maxY) + "px";
+  });
+</script>
+
+</body>
+</html>
