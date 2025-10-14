@@ -76,8 +76,8 @@ a{
 }
 .Boton{
     position:absolute;
-    top: 600px;
-    left: 650px;
+    top: 580px;
+    left: 600px;
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -92,8 +92,8 @@ a{
   }
 .Botono {
   position: absolute;
-  top: 620px;
-  left: 850px;
+  top: 600px;
+  left: 800px;
   padding: 5px 10px;
   font-size: 18px;
   font-weight: bold;
@@ -108,4 +108,5 @@ a{
 
 .Botono:hover {
   background-color: red;
+
 }
