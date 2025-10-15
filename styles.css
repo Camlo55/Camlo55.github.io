@@ -54,24 +54,23 @@ a{
   display: block;    /* elimina espacios extra debajo de la imagen */
 }
 
-
-
-.contenedor {
-  position:absolute;
-  top: 70%;
-  left: 53%;
-  display: flex;
-  transform: translate(-50%, -50%);
-  justify-content: center;
-  align-items: center;
-  gap: 0px;
-  z-index: 10;
-}
 .gata {
+  position:absolute;
+  top: 61%;
+  left: 28%;
+  display: flex;
+  display: flex;
   width: 150px;              /* tamaño más razonable */
+  padding-left: 15%;
 }
 .pingu {
-  width: 300px;              /* igual tamaño que la gata */
+  position:absolute;
+  top: 60%;
+  left: 45%;
+  display: flex;
+  display: flex;
+  padding-left: 55%;
+  width: 280px;              /* igual tamaño que la gata */
   transform: scaleX(-1);   /* volteada */
 }
 .Boton{
